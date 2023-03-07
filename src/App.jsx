@@ -15,7 +15,7 @@ const App = () => {
   }
 
   return (
-    <div className='container'>
+    <main className='container'>
       <span>{`Advice #${data.id}`}</span>
 
       <h1>&ldquo;{`${data.advice}`}&rdquo;</h1>
@@ -25,7 +25,7 @@ const App = () => {
       <button className='dice-container' disabled={isLoading} onClick={handleClick}>
         <img src={Dice} alt='Dice' />
       </button>
-    </div>
+    </main>
   )
 }
 
